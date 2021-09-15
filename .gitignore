@@ -36,6 +36,8 @@ build/Release
 node_modules/
 jspm_packages/
 
+release_builds/
+
 # TypeScript v1 declaration files
 typings/
 
@@ -74,3 +76,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+package-lock.json
+.DS_Store
