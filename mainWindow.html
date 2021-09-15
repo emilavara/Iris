@@ -9,19 +9,19 @@
     <script src="https://kit.fontawesome.com/80057869a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="device-text" onclick="dropDown()">iPhone &ndash; (375 x 812 pixels)<i class='fas fa-angle-down'></i></div>
+    <div id="devices">
+        <div class="device-item" onclick="choosePhone()">iPhone &ndash; (375 x 812 pixels)</div>
+        <div class="device-item" onclick="chooseTablet()">iPad &ndash; (768 x 1024 pixels)</div>
+    </div>
     <div class="form-wrapper">
         <input type="text" id="text" />
         <input type="button" id="btn" value="→" onClick="javascript: var url = document.getElementById('text').value; document.getElementById('phone-frame').src = url;" />
     </div>
     
     <iframe id="phone-frame" src="placeholder.html"></iframe>
-    
-    <div id="device-text" onclick="dropDown()">iPhone &ndash; (375 x 812 pixels)<i class='fas fa-angle-down'></i></div>
-    <div id="devices">
-        <div class="device-item" onclick="choosePhone()">iPhone &ndash; (375 x 812 pixels)</div>
-        <div class="device-item" onclick="chooseTablet()">iPad &ndash; (768 x 1024 pixels)</div>
-    </div>
 
+    <div id="bar"></div>
     
     <script src="js/js.js"></script>
 </body>
