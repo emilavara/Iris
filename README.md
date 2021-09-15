@@ -7,6 +7,14 @@
 Provides a responsive mobile and tablet view for developing and testing mobile first websites and web applications.    
 Iris is written in HTML / CSS / JS and is powered through **Electron.js**.
 
-##Features
+### Features    
+* View projects running on local server and refresh seemingly upon every save.
+* Choose between a smart phone or tablet
+* A variety of mockups in order to display your project the way you want to.
+* Supports Windows & macOS.
 
-Iris can view projects running on local server and refreshes seemingly upon every save.
+### Installation    
+* View projects running on local server and refresh seemingly upon every save.
+* Choose between a smart phone or tablet
+* A variety of mockups in order to display your project the way you want to.
+
