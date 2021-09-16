@@ -14,18 +14,18 @@ p {
 }
 
 #bar {
-    width: 125px;
     height: 5px;
+    width: 125px;
     background: white;
     border-radius: 5px;
-    -webkit-user-select: none;
     -webkit-app-region: drag;
-    margin: 10px auto;
+    margin: auto;
 }
 
 #phone-frame {
     display: block;
     margin: auto;
+    margin-top: 20px;
     border-radius: 45px;
     width: 375px;
     height: 812px;
@@ -35,21 +35,27 @@ p {
 
 .form-wrapper {
     margin: auto;
-    position: relative;
-    left: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     width: 300px;
-    height: 30px;
-    display: none;
+    height: 30px;  
+    opacity: 0%;
+}
+
+.form-wrapper:hover {
+    opacity: 100%;
+    animation: fadein 0.2s;
 }
 
 #text {
-    border: 2px white solid;
-    border-radius: 5px;
-    width: 200px;
-    background: none;
+    border: none;
+    width: 240px;
+    height: 25px;
+    background: #050505;
     color: white;
+    border-radius: 10px;
+    font-size: 14pt;
+    padding: 5px;
     font-family: SF Pro Display;
 }
 
@@ -63,10 +69,7 @@ p {
     color: white;
     font-family: SF Pro Display;
     font-weight: 600;
-    position: relative;
-    right: 27px;
-    background: rgb(0, 0, 0);
-    border: 2px white solid;
+    display: none;
 }
 
 #device-text {
@@ -92,6 +95,7 @@ p {
     margin: auto;
     width: 250px;
     height: 78px;
+    margin-bottom: 10px;
 }
 
 .device-item {

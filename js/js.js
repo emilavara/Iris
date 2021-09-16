@@ -21,5 +21,13 @@ function dropDown() {
     }
 }
 
+var input = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+   event.preventDefault();
+   document.getElementById("btn").click();
+  }
+});
+
 //   if (openDropdown.classList.contains('show')) {
 //     openDropdown.classList.remove('show');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80057869a4.js" crossorigin="anonymous"></script>
     <title>placeholder</title>
     <style>
         body {
@@ -20,7 +21,7 @@
         
         #wrapper {
             position: relative;
-            top: 320px;
+            top: 310px;
         }
 
         .text {
@@ -34,7 +35,7 @@
         }
 
         .footer-text {
-            color: #404040;
+            color: #202020;
             font-size: 9pt;
             position: absolute;
             bottom: 10px;
@@ -43,15 +44,38 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .hover {
+            position: relative;
+            top: 20px;
+            color: #404040;
+        }
+
+        .arrow {
+            color: white;
+            position: relative;
+            top: 0px;
+            animation: hover 1s infinite;
+        }
+
+        @keyframes hover {
+            0% {top: -10px}
+            50% {top: 0px}
+            100% {top: -10px}
+        }
     </style>
 </head>
 <body>
+    <div class="hover">
+        <div class="arrow"><i class="fas fa-arrow-up"></i></div>
+        <div>hover over the frame.</div>
+    </div>
     <div id="wrapper">
         <div id="icon"><img src="assets/icons/png/eye.svg" height="64px"></div>
-        <div class="text-alt">Welcome to Iris.</div>
+        <!-- <div class="text-alt">Welcome to Iris.</div> -->
         <div class="text">Load a URL in the input above.</div>
     </div>
-    <div class="footer-text">Version 0.0.1<br>
+    <div class="footer-text">Iris &ndash; Version 0.0.1<br>
         Made with&nbsp; ❤︎ &nbsp;by Emil Avara</div>
 </body>
 </html>
