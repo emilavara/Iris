@@ -20,6 +20,7 @@ p {
     border-radius: 5px;
     -webkit-app-region: drag;
     margin: auto;
+    margin-top: 20px;
 }
 
 #phone-frame {
@@ -94,7 +95,7 @@ p {
     border-radius: 5px;
     margin: auto;
     width: 250px;
-    height: 78px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
