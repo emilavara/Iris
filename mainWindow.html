@@ -11,7 +11,7 @@
 <body>
     <div class="form-wrapper">
         <input type="text" id="text" />
-        <input type="button" id="btn" value="→" onClick="javascript: var url = document.getElementById('text').value; document.getElementById('phone-frame').src = url;" />
+        <input type="button" id="btn" value="→" onClick="javascript: var url = document.getElementById('text').value; document.getElementById('phone-frame').src = 'http://' + url;" />
     </div>
     
     <iframe id="phone-frame" src="placeholder.html"></iframe>
