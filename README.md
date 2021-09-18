@@ -42,3 +42,5 @@ Time to build!
 Build for Windows | Build for macOS | Build for Linux
 ------------ | ------------- | -------------
 ``` npm run package-win ``` | ``` npm run package-mac ``` | ``` npm run package-linux ```
+
+You'll find your binaries in /release-builds.
