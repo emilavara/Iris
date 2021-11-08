@@ -49,6 +49,16 @@ body {
     float: left;
 }
 
+#notch {
+    position: absolute;
+    top: 88px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 219px; /* Need a specific value to work */
+}
+
 .title {
     font-size: 12pt;
     color: rgb(255, 255, 255);
