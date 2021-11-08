@@ -12,7 +12,7 @@
   "author": "Emil Avara",
   "license": "MIT",
   "dependencies": {
-    "electron": "^14.0.1"
+    "electron": "^14.2.0"
   },
   "devDependencies": {
     "electron-packager": "^15.4.0"

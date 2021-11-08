@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-alt {
+    margin-top: 10px;
+    font-size: 16pt;
+}
+
+.footer-text {
+    color: #252525;
+    font-size: 9pt;
+    position: absolute;
+    bottom: 10px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 150px; /* Need a specific value to work */
+}
+
+.iris {
+    background: -webkit-linear-gradient(#93E7E6, #DE7FBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart {
+    color: #d82a6d;
+}
