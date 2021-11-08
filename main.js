@@ -8,7 +8,7 @@ let mainWindow;
 
 app.on('ready', function(){
     //create new window
-    mainWindow = new BrowserWindow({minWidth: 400, width: 400, minHeight: 1200, height: 1200, transparent: true, frame: false });
+    mainWindow = new BrowserWindow({minWidth: 380, width: 380, minHeight: 720, height: 720, transparent: true, frame: false });
     //load html into window
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
