@@ -1,25 +1,21 @@
-const electron = require('electron');
-const url = require('url');
-const path = require('path');
+const { app, BrowserWindow } = require('electron')
 
-const {app, BrowserWindow} = electron;
+function createWindow() {
+    const win = new BrowserWindow({
+        title: "Iris",
+        width: 395,
+        minWidth: 395,
+        maxWidth: 395,
+        height: 1200,
+        minHeight: 1200,
+        maxHeight: 1200,
+        frame: false,
+        transparent: true
+    })
 
-let mainWindow;
+    win.loadFile('mainWindow.html')
+}
 
-app.on('ready', function(){
-    //create new window
-    mainWindow = new BrowserWindow({
-        minWidth: 395, 
-        width: 395, 
-        minHeight: 1200, 
-        height: 1200, 
-        transparent: true, 
-        frame: false
-    });
-    //load html into window
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'mainWindow.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
-});
+app.whenReady().then(() => {
+    createWindow()
+  })

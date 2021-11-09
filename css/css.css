@@ -9,26 +9,28 @@ body {
 }
 
 .tool-box {
-    width: 100%;
+    width: 395px;
     height: 73px;
     background: rgba(2, 2, 2, 0.487);
     border-radius: 10px;
     margin: auto;
     position: relative;
     -webkit-app-region: drag;
+    
 }
 
 .tool-box-header {
     padding-top: 5px;
     height: 25px;
     text-align: center;
-
+    
 }
 
 .btn-container {
     float: left;
     position: absolute;
     top: 10px;
+    -webkit-app-region: no-drag;
 }
 
 .close-btn {
@@ -68,7 +70,7 @@ body {
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    width: 219px; /* Need a specific value to work */
+    width: 375px; /* Need a specific value to work */
 }
 
 .title {
@@ -77,6 +79,7 @@ body {
     font-weight: 600;
     margin-top: 3px;
     margin-left: 3px;
+    user-select: none;
 }
 
 .home-btn {
@@ -88,6 +91,7 @@ body {
     position: relative;
     left: 7px;
     transition: background 0.2s;
+    -webkit-app-region: no-drag;
 }
 
 .home-btn:hover {
@@ -152,6 +156,7 @@ p {
     padding-left: 10px;
     font-weight: 600;
     font-family: SF Pro Display;
+    -webkit-app-region: no-drag;
 }
 
 #btn {
@@ -180,4 +185,8 @@ i {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+input::placeholder {
+    opacity: 0.3;
 }
