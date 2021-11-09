@@ -70,12 +70,17 @@ body {
 .home-btn {
     width: 30px;
     height: 30px;
-    background: rgba(10, 10, 10, 0.381);
     color: white;
     border-radius: 7px;
     float: left;
     position: relative;
     left: 7px;
+    transition: background 0.2s;
+}
+
+.home-btn:hover {
+    background: rgba(255, 255, 255, 0.123);
+    cursor: pointer;
 }
 
 .home-btn svg {
