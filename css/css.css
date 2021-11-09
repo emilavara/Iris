@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: SF Pro Display;
     overflow: hidden;
-    
 }
 #wrapper {
     margin: auto;
@@ -16,13 +15,14 @@ body {
     border-radius: 10px;
     margin: auto;
     position: relative;
+    -webkit-app-region: drag;
 }
 
 .tool-box-header {
     padding-top: 5px;
     height: 25px;
     text-align: center;
-    -webkit-app-region: drag;
+
 }
 
 .btn-container {
@@ -39,14 +39,22 @@ body {
     float: left;
     margin-right: 8px;
     margin-left: 10px;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(112, 112, 112);
 }
 
-.minimize-btn {
+#minimize-btn {
     height: 15px;
     width: 15px;
     border-radius: 100%;
     background: rgba(28, 28, 28, 0.789);
     float: left;
+    line-height: 15px;
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+    font-weight: 600;
 }
 
 .close-btn:hover, .minimize-btn:hover {
@@ -65,7 +73,7 @@ body {
 
 .title {
     font-size: 12pt;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.808);
     font-weight: 600;
     margin-top: 3px;
     margin-left: 3px;
@@ -118,6 +126,7 @@ p {
     height: 812px;
     border: 10px solid #050505;
     animation: fadein 0.2s;
+    
 }
 
 .form-wrapper {
