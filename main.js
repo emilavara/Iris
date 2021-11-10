@@ -3,9 +3,9 @@ const { app, BrowserWindow } = require('electron')
 function createWindow() {
     const win = new BrowserWindow({
         title: "Iris",
-        width: 395,
-        minWidth: 395,
-        maxWidth: 395,
+        width: 397,
+        minWidth: 397,
+        maxWidth: 397,
         height: 1200,
         minHeight: 1200,
         maxHeight: 1200,

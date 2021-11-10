@@ -17,16 +17,12 @@
             <div class="maximize-btn"></div>
         </div>
         <div class="title">iPhone 12</div>
-        <div class="form-wrapper">
-            <input type="text" id="text" placeholder="http://localhost:3000"/>
+        
+            <input type="text" id="text" placeholder="http://localhost:5500"/>
             <input type="button" id="btn" value="→" onClick="javascript: var url = document.getElementById('text').value; document.getElementById('phone-frame').src = url;" />
-        </div>
+        
     </div>
     <div id="notch">
-        <!-- <svg width="219" height="30" viewBox="0 0 219 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H219V0C216.894 0.602689 215.418 2.49525 215.345 4.68446L215.317 5.5618V5.5618C215.317 19.0587 204.375 30 190.878 30H28.1217C14.6249 30 3.68349 19.0587 3.68349 5.5618V5.5618L3.65455 4.68447C3.58233 2.49525 2.10586 0.602689 0 0V0Z" fill="#050505"/>
-            <rect x="85" y="11.875" width="50" height="6.25" rx="3.125" fill="#0D0D0D"/>
-        </svg>             -->
         <svg width="375" height="44" viewBox="0 0 375 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_5:424)">
             <path d="M78 -2H297V-2C294.894 -1.39731 293.418 0.495246 293.345 2.68446L293.317 3.5618V3.5618C293.317 17.0587 282.375 28 268.878 28H106.122C92.6249 28 81.6835 17.0587 81.6835 3.5618V3.5618L81.6545 2.68447C81.5823 0.49525 80.1059 -1.39731 78 -2V-2Z" fill="#050505"/>
@@ -46,17 +42,10 @@
             <rect width="375" height="44" fill="white"/>
             </clipPath>
             </defs>
-            </svg>
-                     
+        </svg> 
     </div>
     <iframe id="phone-frame" src="placeholder.html"></iframe>
     
-    <!-- <div id="device-text" onclick="dropDown()">iPhone &ndash; (375 x 812 pixels)<i class='fas fa-angle-down'></i></div>
-    <div id="devices">
-        <div class="device-item" onclick="choosePhone()">iPhone &ndash; (375 x 812 pixels)</div>
-        <div class="device-item" onclick="chooseTablet()">iPad &ndash; (768 x 1024 pixels)</div>
-        <div id="bar"></div>
-    --> </div>
     <script src="js/js.js"></script>
     <script src="js/menuHandler.js"></script>
 </body>
