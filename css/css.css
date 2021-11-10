@@ -4,68 +4,83 @@ body {
     font-family: SF Pro Display;
     overflow: hidden;
 }
+
 #wrapper {
     margin: auto;
 }
 
 .tool-box {
     width: 395px;
-    height: 73px;
-    background: rgba(2, 2, 2, 0.487);
+    height: 50px;
+    background: rgba(2, 2, 2, 0.70);
     border-radius: 10px;
     margin: auto;
     position: relative;
-    -webkit-app-region: drag;
-    
-}
-
-.tool-box-header {
-    padding-top: 5px;
-    height: 25px;
-    text-align: center;
-    
+    -webkit-app-region: drag;   
+    z-index: 0;
 }
 
 .btn-container {
+    height: 100%;
+    width: 85px;
     float: left;
-    position: absolute;
-    top: 10px;
     -webkit-app-region: no-drag;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.btn-container:hover .close-btn { 
+    background: #FF3135;
+}
+
+.btn-container:hover .minimize-btn { 
+    background: #FFBE00;
+}
+
+.btn-container:hover .maximize-btn { 
+    background: #00D646;
+}
+
+
+.btn-container div {
+    margin: 4px;
 }
 
 .close-btn {
-    height: 15px;
-    width: 15px;
+    -webkit-app-region: no-drag;
+    height: 13px;
+    width: 13px;
     border-radius: 100%;
-    background: rgba(28, 28, 28, 0.789);
-    float: left;
-    margin-right: 8px;
-    margin-left: 10px;
-    line-height: 15px;
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(112, 112, 112);
+    background: #464646;
+    transition: background 0.1s;
+    cursor: pointer;
 }
 
-#minimize-btn {
-    height: 15px;
-    width: 15px;
+.minimize-btn {
+    transition: background 0.1s;
+    -webkit-app-region: no-drag;
+    height: 13px;
+    width: 13px;
     border-radius: 100%;
-    background: rgba(28, 28, 28, 0.789);
-    float: left;
-    line-height: 15px;
-    font-size: 15px;
-    color: rgb(112, 112, 112);
-    font-weight: 600;
+    background: #464646;
+    cursor: pointer;
 }
 
-.close-btn:hover, .minimize-btn:hover {
-    background: rgba(196, 196, 196, 0.686)
+.maximize-btn {
+    transition: background 0.1s;
+    -webkit-app-region: no-drag;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    background: #464646;
+    cursor: pointer;
 }
 
 #notch {
     position: absolute;
-    top: 88px;
+    top: 70px;
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -74,38 +89,15 @@ body {
 }
 
 .title {
-    font-size: 12pt;
+    font-size: 11pt;
     color: rgba(255, 255, 255, 0.808);
     font-weight: 600;
-    margin-top: 3px;
-    margin-left: 3px;
-    user-select: none;
-}
-
-.home-btn {
-    width: 30px;
-    height: 30px;
-    color: white;
-    border-radius: 7px;
-    float: left;
+    width: 50%;
     position: relative;
-    left: 7px;
-    transition: background 0.2s;
-    -webkit-app-region: no-drag;
-}
-
-.home-btn:hover {
-    background: rgba(255, 255, 255, 0.123);
-    cursor: pointer;
-}
-
-.home-btn svg {
-    opacity: 0.4;
-    transition: opacity 0.2s;
-}
-
-.home-btn:hover svg {
-    opacity: 0.6;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    -webkit-app-region: drag;
 }
 
 p {
@@ -133,30 +125,20 @@ p {
     
 }
 
-.form-wrapper {
-    margin: auto;
-    margin-top: 4px;
-    text-align: center;
-    width: 300px;
-    height: 30px;  
-    opacity: 1;
-    position: relative;
-    right: 15px;
-}
-
 #text {
     border: none;
-    width: 220px;
+    width: 150px;
     height: 20px;
-    background: rgba(10, 10, 10, 0.645);
+    background: none;
     color: white;
     border-radius: 7px;
-    font-size: 12pt;
+    font-size: 9pt;
     padding: 5px;
     padding-left: 10px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: SF Pro Display;
-    -webkit-app-region: no-drag;
+
+    user-select: none;
 }
 
 #btn {
@@ -188,5 +170,5 @@ textarea:focus, input:focus{
 }
 
 input::placeholder {
-    opacity: 0.3;
+    opacity: 1.0;
 }
