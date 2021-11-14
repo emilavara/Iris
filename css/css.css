@@ -25,19 +25,7 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.022);
 }
 
-.tool-box:before {
-    position: absolute;
-    display: block;
-    border-radius: 10px;
-    content: '';
-    border-bottom: 1px solid rgba(0, 0, 0, 0.012);
-    border-left: 1px solid rgba(0, 0, 0, 0.022);
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
+
 
 .btn-container {
     height: 100%;
@@ -137,11 +125,13 @@ p {
     margin: auto;
     margin-top: 10px;
     border-radius: 45px;
-    width: 375px;
+    width: 378px;
     height: 812px;
     border: 10px solid #050505;
     animation: fadein 0.2s;
+    z-index: 1;
     
+    overflow: hidden;
 }
 
 #text {
@@ -156,7 +146,6 @@ p {
     padding-left: 10px;
     font-weight: 500;
     font-family: SF Pro Display;
-   
     -webkit-app-region: no-drag;
 }
 

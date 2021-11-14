@@ -1,5 +1,3 @@
-
-
 function choosePhone() {
     document.getElementById("phone-frame").style.width = 375 + "px";
     document.getElementById("phone-frame").style.height = 812 + "px";
@@ -30,7 +28,3 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("btn").click();
   }
 });
-
-//   if (openDropdown.classList.contains('show')) {
-//     openDropdown.classList.remove('show');
-

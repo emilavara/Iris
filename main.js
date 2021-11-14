@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, BrowserView } = require('electron')
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -10,7 +10,10 @@ function createWindow() {
         minHeight: 1200,
         maxHeight: 1200,
         frame: false,
-        transparent: true
+        transparent: true,
+        webPreferences: {
+            webviewTag: true
+          }
     })
 
     win.loadFile('mainWindow.html')

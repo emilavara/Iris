@@ -9,18 +9,15 @@
     <script src="https://kit.fontawesome.com/80057869a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div class="tool-box">
         <div class="btn-container">
             <div class="close-btn"></div>
             <div class="minimize-btn"></div>
             <div class="maximize-btn"></div>
         </div>
-        <div class="title">iPhone 12</div>
-        
+        <div class="title">iPhone 12</div>    
             <input type="text" id="text" placeholder="http://localhost:5500"/>
             <input type="button" id="btn" value="→" onClick="javascript: var url = document.getElementById('text').value; document.getElementById('phone-frame').src = url;" />
-        
     </div>
     <div id="notch">
         <svg width="375" height="44" viewBox="0 0 375 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,8 +42,6 @@
         </svg> 
     </div>
     <iframe id="phone-frame" src="placeholder.html"></iframe>
-    
     <script src="js/js.js"></script>
-    <script src="js/menuHandler.js"></script>
 </body>
 </html>
