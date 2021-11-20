@@ -12,7 +12,8 @@ function createWindow() {
         frame: false,
         transparent: true,
         webPreferences: {
-            webviewTag: true
+            webviewTag: true,
+            webSecurity: false
           }
     })
 
