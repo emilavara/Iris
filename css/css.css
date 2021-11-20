@@ -97,6 +97,29 @@ body {
     width: 375px; /* Need a specific value to work */
 }
 
+.action-btn-container {
+    -webkit-app-region: no-drag;
+    height: 35px;
+    width: 120px;
+    /* background-color: red; */
+    float: right;
+    position: relative;
+    bottom: 2px;
+    right: 10px;
+}
+
+.action-btn-container svg {
+    float: left;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#reload-btn {
+    position: relative;
+    left: 3px;
+    top: 1px;
+}
+
 .title {
     font-size: 11pt;
     color: rgba(255, 255, 255, 0.808);
@@ -141,7 +164,7 @@ p {
     width: 150px;
     height: 20px;
     background: none;
-    color: white;
+    color: rgb(93, 93, 93);
     border-radius: 7px;
     font-size: 9pt;
     padding: 5px;

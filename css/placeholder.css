@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: black;
     color: white;
-    font-family: SF Pro Display;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     width: 100vw;
     height: 100vh;
@@ -19,12 +19,12 @@ body {
 
 .text-alt {
     margin-top: 10px;
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 .footer-text {
     color: #252525;
-    font-size: 9pt;
+    font-size: 8pt;
     position: absolute;
     bottom: 10px;
     left: 0; 

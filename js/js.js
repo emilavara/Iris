@@ -1,25 +1,12 @@
-function choosePhone() {
-    document.getElementById("phone-frame").style.width = 375 + "px";
-    document.getElementById("phone-frame").style.height = 812 + "px";
-    document.getElementById("device-text").innerHTML = "iPhone &ndash; (375 x 812 pixels)<i class='fas fa-angle-down'></i>";
-    document.getElementById("devices").style.display = "none";
+function reloadFrame() {
+  document.getElementById('phone-frame').src += '';
 }
 
-function chooseTablet() {
-    document.getElementById("phone-frame").style.width = 768 + "px";
-    document.getElementById("phone-frame").style.height = 1024 + "px";
-    document.getElementById("device-text").innerHTML = "iPad &ndash; (768 x 1024 pixels)<i class='fas fa-angle-down'></i>";
-    document.getElementById("devices").style.display = "none";
+function homeButton() {
+  document.getElementById('phone-frame').src = 'placeholder.html';
 }
 
-function dropDown() {
-    var x = document.getElementById("devices");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-}
+document.getElementById("home-btn").onclick = homeButton;
 
 var input = document.getElementById("text");
 input.addEventListener("keyup", function(event) {
