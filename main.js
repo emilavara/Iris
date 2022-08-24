@@ -17,7 +17,28 @@ function createWindow() {
           }
     })
 
+    try {
+      // works with 1.1 too
+      win.webContents.debugger.attach('1.2')
+    } catch (err) {
+      console.log('Debugger attach failed: ', err)
+    }
+
+    const isDebuggerAttached = win.webContents.debugger.isAttached()
+    console.log('debugger attached? ', isDebuggerAttached)
+
+    win.webContents.debugger.on('detach', (event, reason) => {
+      console.log('Debugger detached due to: ', reason)
+    });
+
+    // This is where the magic happens!
+    win.webContents.debugger.sendCommand('Emulation.setEmitTouchEventsForMouse', {
+      enabled: true,
+      configuration: 'mobile',
+    });
+
     win.loadFile('mainWindow.html')
+    
     
     win.webContents.session.webRequest.onHeadersReceived({ urls: [ "*://*/*" ] },
     (d, c)=>{

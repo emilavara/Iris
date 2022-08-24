@@ -146,7 +146,6 @@ p {
 }
 
 #phone-frame {
-    display: block;
     margin: auto;
     margin-top: 10px;
     border-radius: 45px;
@@ -155,7 +154,6 @@ p {
     border: 10px solid #050505;
     animation: fadein 0.2s;
     z-index: 1;
-    
     overflow: hidden;
 }
 
@@ -169,8 +167,14 @@ p {
     font-size: 9pt;
     padding: 5px;
     padding-left: 10px;
+    
     font-weight: 600;
     -webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
 }
 
 #btn {

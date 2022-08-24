@@ -67,7 +67,15 @@
             </defs>
         </svg> 
         </div>
-    <iframe seamless="seamless" id="phone-frame" src="placeholder.html" height="812px" width="375px"></iframe>
+    <!-- <iframe seamless="seamless" id="phone-frame" src="placeholder.html" height="812px" width="375px"></iframe> -->
+    <webview id="phone-frame" src="placeholder.html" style="width: 375px; height: 812px;"></webview>
     <script src="js/js.js"></script>
+    <script>
+        const webview = document.querySelector('webview');
+        webview.addEventListener('dom-ready', () => {
+        webview.insertCSS('html::-webkit-scrollbar {display: none;}')
+        webview.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1')
+        })
+    </script>
 </body>
 </html>
